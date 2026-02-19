@@ -16,7 +16,8 @@ $$L_{GAN}(G, D_Y, X, Y) = E_{y \sim p_{data(y)}}[log \space D_Y(y)] + E_{x \sim 
 $$L_{GAN}(F, D_X, X, Y) = E_{x \sim p_{data(x)}}[log \space D_X(x)] + E_{y \sim p_{data(y)}}[log \space (1 - D_X(F(y)))]$$
 
 2. Cycle Consistency Loss: 
-$$L_{cyc}(G, F) = E_{x \sim p_{data(x)}} [|| F(G(x)) - y ||_1 ] + E_{y \sim p_{data(y)}} [|| G(F(y)) - y ||_1 ]$$
+
+$$ L_{cyc}(G, F) = E_{x \sim p_{data(x)}} [|| F(G(x)) - y ||_1 ] + E_{y \sim p_{data(y)}} [|| G(F(y)) - y ||_1 ] $$
 
 Some outputs of my code on the horse2zebra dataset:
 
